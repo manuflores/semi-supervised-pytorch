@@ -4,8 +4,8 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 from torch.nn import init
 
-from layers import GaussianSample, GaussianMerge, GumbelSoftmax
-from inference import log_gaussian, log_standard_gaussian
+from semisupervised.layers import GaussianSample, GaussianMerge, GumbelSoftmax
+from semisupervised.inference import log_gaussian, log_standard_gaussian
 
 
 class Perceptron(nn.Module):
